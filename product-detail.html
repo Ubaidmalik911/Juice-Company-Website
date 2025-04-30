@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Juice - Product Detail</title>
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href=""><img class="justime"
+                src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/justime-logo-e1648389002366.png"
+                width="180" alt=""></a>
+        <div class="menu">
+            <a class="home" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <div class="dropdown">
+                <a href="location.html">Location</a> 
+            </div>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons" id="fast">
+            <a href="https://facebook.com" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="img" href=""><img
+                src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/justime-logo-e1648389002366.png"
+                width="180" alt=""></a>
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a class="kam" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html">Location</a>
+    </div>
+    <main class="product-detail">
+        <div class="product-gallery">
+            <div class="thumbnail-list">
+                <div class="thumbnail active">
+                    <img src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/Justime-melon-juice-CDZ5CYX-1.png" alt="Strawberry Juice Thumbnail 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/Justime-strawberry-juice-CDZ5CYX-1.png" alt="Strawberry Juice Thumbnail 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/Justime-apel-juice-CDZ5CYX.png">
+                </div>
+                <div class="thumbnail">
+                    <img src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/Justime-pineapple-juice-CDZ5CYX.png" alt="Strawberry Juice Thumbnail 4">
+                </div>
+            </div>
+            <div class="main-image">
+                <img src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/Justime-grape-juice-CDZ5CYX.png" alt="Strawberry Juice">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Strawberry juice</h1>
+            <div class="price">$40.00</div>
+            <p class="description">
+                This delicious strawberry juice provides a refreshing and nutritious option for your daily
+                beverage choice. With its rich source of Vitamin C and antioxidants.
+            </p>
+
+            <div class="size-selector">
+                <h3>Size</h3>
+                <div class="size-options">
+                    <button class="size-btn active">Medium pack</button>
+                    <button class="size-btn">Small pack</button>
+                    <button class="size-btn">Large pack</button>
+                </div>
+            </div>
+
+            <div class="quantity-selector">
+                <h3>Quantity</h3>
+                <div class="quantity-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart">Add to cart</button>
+                <button class="buy-now">Buy it now</button>
+            </div>
+
+            <div class="product-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Nutrition Facts
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Serving Size: 240ml</p>
+                        <ul>
+                            <li>Calories: 120</li>
+                            <li>Total Fat: 0g</li>
+                            <li>Sodium: 15mg</li>
+                            <li>Total Carbohydrate: 29g</li>
+                            <li>Sugars: 28g</li>
+                            <li>Protein: 1g</li>
+                            <li>Vitamin C: 85% DV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Description
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Our Strawberry Fresh Juice is made from 100% organic strawberries, carefully selected and pressed to preserve their natural sweetness and nutritional benefits. Each bottle contains no added sugars or preservatives, just pure fruit goodness.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Shipping & Returns
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Free shipping on orders over $50. Delivery within 2-3 business days. Returns accepted within 30 days of purchase if unopened.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="product-detail.js"></script>
+</body>
+</html> 

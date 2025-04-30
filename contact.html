@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Juice</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href=""><img class="justime"
+            src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/justime-logo-e1648389002366.png"
+            width="180" alt=""></a>
+        <div class="menu">
+          <a class="home" href="index.html">Home</a>
+          <a href="about.html" class="about">About</a>
+          <div class="dropdown">
+            <a href="product.html">Product</a>
+            <a href="location.html">Location</a>
+            
+          </div>
+        </div>
+        <div class="social-icons" id="lo">
+          <a href="https://facebook.com" class="icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://youtube.com" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a class="img" href=""><img
+            src="https://templatekit.jegtheme.com/justime/wp-content/uploads/sites/244/2022/03/justime-logo-e1648389002366.png"
+            width="180" alt=""></a>
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a class="kam" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="location.html">Location</a>
+      </div>
+    <section id="contact">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>📞 Get In Touch</h2>
+            <p>We'd love to hear from you! Whether you have a question about our juices, pricing, or anything else — our team is ready to answer all your questions.</p>
+            <div class="info-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>D-36, Block B, North Nazimabad Town, Karachi, Sindh 74600, Pakistan</span>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-phone"></i>
+              <span><a href="tel:+922136630102">(021) 36630102</a></span>
+            </div>
+            <div class="info-box">
+              <i class="fab fa-whatsapp"></i>
+              <span><a href="https://wa.me/923000453661">(+92) 300-0453661</a></span>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-envelope"></i>
+              <span><a href="mailto:info@juicecompany.com">info@juicecompany.com</a></span>
+            </div>
+          </div>
+      
+          <div class="contact-form">
+            <h2>📬 Send Us a Message</h2>
+            <form>
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>Juice Co.</h3>
+            <p>Bringing you nature’s freshest flavors in every sip. 100% organic, 100% delicious.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Juice Co. All rights reserved.</p>
+        </div>
+      </footer>
+      <script src="contact.js"></script>
+      
+    
+</body>
+</html>

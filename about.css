@@ -1,0 +1,425 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 15px 20px;
+  }
+  body{
+    
+    font-family: "Roboto", sans-serif;
+    background-image: url(Justime-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  *{
+    scroll-behavior: smooth;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: rgb(94, 86, 86);
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .menu a:hover {
+    color: #ef8d12;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+  
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+  }
+  
+  
+  .dropdown-menu a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    background: #ef8d12;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    height: 50px;
+    align-content: center;
+    width: 50px;
+    text-align: center;
+  }
+  
+  .social-icons a:hover {
+    background: #ffffff;
+    color: #ef8d12;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+    align-items: flex-start;
+    z-index: 1;
+  
+  
+  }
+  
+  .mobile-menu a {
+    display: block;
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 20px;
+    color: #5e5757;
+  }
+  
+  .mobile-menu.open {
+    display: block;
+    z-index: 2;
+  }
+  
+  @media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+  
+    .hamburger {
+        display: block;
+    }
+  
+    #vc{
+        display: none;
+    }
+  
+    .slider-container {
+        display: none;
+    }
+  
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+    color: #222;
+    padding: 12px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    margin-top: 30px;
+    width: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .mobile-menu .kam {
+    color: #ef8d12;
+    font-weight: 500;
+  }
+  
+  .menu .about {
+    color: #ef8d12;
+  
+  }
+  
+  @keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+  
+    80% {
+        transform: translateX(5%);
+    }
+  
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+  
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+  
+  .mobile-menu.open {
+    animation: slideIn 0.5s ease-out;
+    transform: translateX(0);
+  }
+  
+  .mobile-menu.closing {
+    animation: slideOut 0.5s ease-in forwards;
+  }
+  .about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://static.vecteezy.com/system/resources/thumbnails/032/942/147/small_2x/indulgent-milkshakes-desserts-sweet-chocolate-berry-fruit-free-photo.jpg') no-repeat center center/cover;
+    padding: 230px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    background-attachment: fixed;
+  }
+  
+  .about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ef8d12;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: transparent;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    overflow: hidden;
+  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .team-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .team-section h2 {
+    color: #f68b1e;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .team-member {
+    width: 220px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+  }
+  
+  .team-member h4 {
+    margin: 10px 0 5px;
+  }
+  
+  .team-member p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  @media (min-width: 768px) {
+    
+  
+    .about-header h1 {
+      font-size: 4rem;
+    }
+  
+    .about-header p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .value-box img{
+    width: 100%;
+    border-radius: 10px 10px;
+  
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 20px 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 15px;
+  }
+  
+  .footer-about p {
+    color: #ccc;
+  }
+  
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-social .social-icons a {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  .footer-social .social-icons a:hover {
+    color: #ef8d12;
+    background-color: white;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    color: #999;
+  }
